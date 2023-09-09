@@ -19,21 +19,22 @@ public class Project1_Daniel_Potapov
 
         System.out.println("Enter the policy number:");
         policyNum = input.nextInt();
-        System.out.println("Enter the policy provider name:");
-        providerName = input.next();
         input.nextLine();
+        System.out.println("Enter the policy provider name:");
+        providerName = input.nextLine();
         System.out.println("Enter your first name");
-        firstName = input.next();
+        firstName = input.nextLine();
         System.out.println("Enter your last name");
-        lastName = input.next();
+        lastName = input.nextLine();
         System.out.println("Enter your age");
         age = input.nextInt();
         System.out.println("An active smoker?(smoker/non-smoker)");
-        smokingStatus = input.next();
+        smokingStatus = input.nextLine();
+        input.nextLine();
         System.out.println("How tall are you?(in inches)");
-        height = input.nextInt();
+        height = input.nextDouble();
         System.out.println("How much do you weigh?(in pounds)");
-        weight = input.nextInt();
+        weight = input.nextDouble();
 
         Policy policy = new Policy(policyNum, providerName, firstName, lastName, age, smokingStatus, height, weight);
 
