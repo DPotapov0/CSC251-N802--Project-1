@@ -5,27 +5,40 @@ public class Project1_Daniel_Potapov
     public static void main(String[] args) throws Exception 
     {
         Scanner input = new Scanner(System.in);
-        Policy policy = new Policy();
+        
+
+        int policyNum;
+        String providerName;
+        String firstName;
+        String lastName;
+        int age;
+        String smokingStatus; 
+        double height;
+        double weight;
+
 
         System.out.println("Enter the policy number:");
-        policy.policyNum(input.nextInt());
+        policyNum = input.nextInt();
         System.out.println("Enter the policy provider name:");
-        policy.providerName(input.next());
+        providerName = input.next();
+        input.nextLine();
         System.out.println("Enter your first name");
-        policy.firstName(input.next());
+        firstName = input.next();
         System.out.println("Enter your last name");
-        policy.lastName(input.next());
+        lastName = input.next();
         System.out.println("Enter your age");
-        policy.Age(input.nextInt());
+        age = input.nextInt();
         System.out.println("An active smoker?(smoker/non-smoker)");
-        policy.smokingStatus(input.next());
+        smokingStatus = input.next();
         System.out.println("How tall are you?(in inches)");
-        policy.Height(input.nextInt());
+        height = input.nextInt();
         System.out.println("How much do you weigh?(in pounds)");
-        policy.Weight(input.nextInt());
+        weight = input.nextInt();
+
+        Policy policy = new Policy(policyNum, providerName, firstName, lastName, age, smokingStatus, height, weight);
 
         System.out.println("Policy Number: " + policy.getPolicyNum());
-        System.out.println("Policy Prover: " + policy.getproviderName());
+        System.out.println("Policy Provider: " + policy.getproviderName());
         System.out.println("Policyholder's First Name: " + policy.getFirstName());
         System.out.println("Policyholder's Last Name: " + policy.getLastName());
         System.out.println("Policyholder's Age: " + policy.getAge());
