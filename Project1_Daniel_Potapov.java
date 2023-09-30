@@ -26,8 +26,9 @@ public class Project1_Daniel_Potapov
         String smokingStatus = ""; 
         double height = 0;
         double weight = 0;
+        int numberOfNoneSmokers = 0;
+        int numberOfSmokers = 0;
 
-        
 
         while(inputFile.hasNext())
         {
@@ -53,6 +54,14 @@ public class Project1_Daniel_Potapov
 
             policyList.add(policy);
 
+            if(smokingStatus.equals("smoker"))
+            {
+                numberOfSmokers += 1;
+            }else if(smokingStatus.equals("non-smoker"))
+            {
+                numberOfNoneSmokers += 1;
+            }
+
             System.out.println("\n\nPolicy Number: " + policy.getPolicyNum());
             System.out.println("Policy Provider: " + policy.getproviderName());
             System.out.println("Policyholder's First Name: " + policy.getFirstName());
@@ -63,7 +72,8 @@ public class Project1_Daniel_Potapov
             System.out.println("Policyholder's Weight: " + policy.getWeight() + " pounds");
             System.out.printf("Policyholder's BMI: %.2f", policy.bmiCalc());
             System.out.printf("\nPolicy Price: $%.2f", policy.policyCost()); 
-
+            System.out.println("\n\nThe number of policies with a smoker is: " + numberOfSmokers);
+            System.out.println("\nThe number of policies with a non-smoker is: " + numberOfNoneSmokers);
         }
 
 
