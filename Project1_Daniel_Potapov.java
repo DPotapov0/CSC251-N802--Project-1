@@ -59,10 +59,10 @@ public class Project1_Daniel_Potapov
             System.out.println("Policyholder's Last Name: " + policy.getLastName());
             System.out.println("Policyholder's Age: " + policy.getAge());
             System.out.println("Policyholder's Smoking Status: " + policy.getSmokingStatus());
-            System.out.println("Policyholder's Height: " + policy.getHeight());
-            System.out.println("Policyholder's Weight: " + policy.getWeight());
+            System.out.println("Policyholder's Height: " + policy.getHeight() + " inches");
+            System.out.println("Policyholder's Weight: " + policy.getWeight() + " pounds");
             System.out.printf("Policyholder's BMI: %.2f", policy.bmiCalc());
-            System.out.printf("\nPolicy Price: %.2f", policy.policyCost()); 
+            System.out.printf("\nPolicy Price: $%.2f", policy.policyCost()); 
 
         }
 
