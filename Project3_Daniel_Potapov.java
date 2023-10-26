@@ -65,16 +65,7 @@ public class Project3_Daniel_Potapov
                 numberOfNoneSmokers += 1;
             }
 
-            System.out.println("\n\nPolicy Number: " + policy.getPolicyNum());
-            System.out.println("Policy Provider: " + policy.getproviderName());
-            System.out.println("Policyholder's First Name: " + policyHolder.getFirstName());
-            System.out.println("Policyholder's Last Name: " + policyHolder.getLastName());
-            System.out.println("Policyholder's Age: " + policyHolder.getAge());
-            System.out.println("Policyholder's Smoking Status: " + policyHolder.getSmokingStatus());
-            System.out.println("Policyholder's Height: " + policyHolder.getHeight() + " inches");
-            System.out.println("Policyholder's Weight: " + policyHolder.getWeight() + " pounds");
-            System.out.printf("Policyholder's BMI: %.2f", policyHolder.bmiCalc());
-            System.out.printf("\nPolicy Price: $%.2f", policy.policyCost()); 
+            System.out.println(policy.toString());
             System.out.println("\n\nThe number of policies with a smoker is: " + numberOfSmokers);
             System.out.println("\nThe number of policies with a non-smoker is: " + numberOfNoneSmokers);
         }

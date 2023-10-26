@@ -110,5 +110,17 @@ public class policyHolder
         return BMI;
     }
 
+    public String toString()
+    {
+        return "Policyholder's First Name: " + firstName + 
+               "\nPolicyholder's Last Name: " + lastName + 
+               "\nPolicyholder's Age: " + Age + 
+               "\nPolicyholder's Smoking Status: " + smokingStatus + 
+               "\nPolicyholder's Height: " + height + " inches" + 
+               "\nPolicyholder's Weight: " + weight + " pounds" + 
+               String.format("\nPolicyholder's BMI: %.2f", BMI);
+               
+    }
+
     
 }
