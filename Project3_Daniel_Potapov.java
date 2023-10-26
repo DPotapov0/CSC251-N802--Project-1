@@ -68,6 +68,8 @@ public class Project3_Daniel_Potapov
             System.out.println(policy.toString());
             System.out.println("\n\nThe number of policies with a smoker is: " + numberOfSmokers);
             System.out.println("\nThe number of policies with a non-smoker is: " + numberOfNoneSmokers);
+
+            System.out.println("There were " + policy.totalPolicies + " Policy objects created.");
         }
 
 

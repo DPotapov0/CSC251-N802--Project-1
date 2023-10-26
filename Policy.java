@@ -7,6 +7,7 @@ public class Policy
     private int policyNum;
     private String providerName;
     private policyHolder policyHolder;
+    public static int totalPolicies = 0;
 
     /**
      * Default Constructor of the Policy Class
@@ -33,6 +34,7 @@ public class Policy
         this.policyNum = policyNum;
         this.providerName = providerName;
         this.policyHolder = policyHolder;
+        totalPolicies += 1;
     }
 
     /**
